@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Alessandro Rodrigues"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <title>Formulario POST</title>
+</head>
+<body>
+    <div class="title-container">
+     <h1>Está procurando trabalhos <br> na área de tecnologia?</h1>
+     <span>Crie sua conta e venha participar dos nossos processos seletivos!</span>
+     <img src="./assets/choices.svg" alt="">
+    </div>
+   
+   
+   
+   
+    <div class="form">
+    <form action="exibirForm.php" method="POST">
+      <label>
+          Nome <input placeholder="Nome" class="field" type="text" name="name" >
+      </label>
+      <label>
+          Email <input placeholder="Email"  class="field" type="email" name="email" >
+      </label>
+      <label>
+          Senha <input placeholder="Senha" class="field" type="password" name="password" >
+      </label>
+      <label class="pointer">
+           <h3>Escolaridade</h3> 
+            <input type="radio"  class="radio" name="schooling" value="ensino medio"> Ensino médio <br>
+            <input type="radio"  class="radio" name="schooling" value="ensino superior"> Ensino Superior <br>
+            <input type="radio"  class="radio" name="schooling" value="Pós graduação"> Pós-graduação
+      </label>
+      <label class="pointer">
+         <h3>Idiomas</h3>
+            <input type="checkbox" name="lingua" value="portugues"> português
+            <input type="checkbox" name="lingua" value="inglês"> inglês
+            <input type="checkbox" name="lingua" value="espanhol"> espanhol
+    </label>
+    <label>
+        <select name="vaga" >
+            <option selected disabled value="">Escolha a vaga</option>
+            <option class="option" value="frontend-junior">Desenvolvedor Front-end junior</option>
+            <option value="back-end pleno">Desenvolvedor Back-end pleno</option>
+            <option value="design">Design UX e Ui junior</option>
+            <option value="design pleno">Design UX e Ui junior pleno</option>
+            
+            
+        </select>
+    </label>
+         <div class="textarea">
+         <textarea name="textarea" style="resize: none" cols="43" rows="5" placeholder="Fale um pouco sobre você"></textarea>
+        </div>
+         <input class="button pointer" type="submit" value="Criar conta">
+    </form>
+</div>
+</body>
+</html>
